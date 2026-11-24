@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royal Dates | Premium Dates Delivered in Bangladesh &amp; Worldwide</title>
+<meta name="description" content="Shop Ajwa, Medjool, Mabroom, Sukkari, Safawi, Khalas, Piarom and Deglet Noor dates from Royal Dates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#shop">Skip to products</a>
+<div class="announce" role="note">Free delivery in Dhaka on orders over ৳3,000 <span>(demo offer)</span></div>
+
+<header class="nav">
+  <button class="icon menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+  <a class="logo" href="#top" aria-label="Royal Dates home">
+    <svg width="30" height="24" viewBox="0 0 30 24" aria-hidden="true"><path d="M2 20 0 5l8 6 7-10 7 10 8-6-2 15z" fill="#C49A45"/><rect x="2" y="21" width="26" height="3" fill="#C49A45"/></svg>
+    <span>Royal Dates</span>
+  </a>
+  <nav id="mainNav" aria-label="Main">
+    <a href="#categories">Categories</a><a href="#best">Best sellers</a><a href="#shop">Collection</a><a href="#story">Our story</a><a href="#gifts">Gift boxes</a>
+  </nav>
+  <form class="search" role="search" id="searchForm">
+    <label class="sr" for="q">Search dates</label>
+    <input id="q" type="search" placeholder="Search dates" autocomplete="off">
+  </form>
+  <div class="actions">
+    <button class="icon" id="orderBtn" aria-label="My order">My order</button>
+    <button class="icon" id="wishBtn" aria-label="Wishlist">♡<b id="wishCount">0</b></button>
+    <button class="icon" id="cartBtn" aria-label="Open cart">Cart<b id="cartCount">0</b></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Dates worth gifting. Dates worth keeping for yourself.</h1>
+      <p>Eight varieties, each shown as it arrives. Choose 250g for a taste or 1kg for the table.</p>
+      <div class="cta"><a class="btn gold" href="#shop">Shop the collection</a><a class="btn ghost" href="#gifts">See gift boxes</a></div>
+    </div>
+    <div class="hero-img"><img src="assets/images/hero.jpg" alt="Brass bowl filled with dates" width="480" height="350" fetchpriority="high"></div>
+  </section>
+
+  <section id="categories" class="sec">
+    <h2>Shop by colour and texture</h2>
+    <div class="cats">
+      <button class="cat" data-filter="dark"><img src="assets/images/ajwa.jpg" alt="" loading="lazy" width="300" height="300"><span>Dark &amp; rich</span></button>
+      <button class="cat" data-filter="red"><img src="assets/images/medjool.jpg" alt="" loading="lazy" width="300" height="300"><span>Soft &amp; ruby</span></button>
+      <button class="cat" data-filter="golden"><img src="assets/images/sukkari.jpg" alt="" loading="lazy" width="300" height="300"><span>Golden &amp; amber</span></button>
+    </div>
+  </section>
+
+  <section id="best" class="sec cream">
+    <h2>Best sellers <small>demo ranking</small></h2>
+    <div class="grid" id="bestGrid"></div>
+  </section>
+
+  <section id="shop" class="sec">
+    <h2>The premium collection</h2>
+    <div class="filters" role="group" aria-label="Filter products">
+      <button class="chip on" data-filter="all">All</button><button class="chip" data-filter="dark">Dark &amp; rich</button><button class="chip" data-filter="red">Soft &amp; ruby</button><button class="chip" data-filter="golden">Golden &amp; amber</button>
+    </div>
+    <p id="empty" class="empty" hidden>No dates match your search. Clear the search or pick another filter.</p>
+    <div class="grid" id="shopGrid" aria-live="polite"></div>
+  </section>
+
+  <section class="sec dark why">
+    <h2>Why Royal Dates</h2>
+    <div class="trio">
+      <div><h3>Eight varieties</h3><p>From dark Ajwa to golden Sukkari, one place to compare them all.</p></div>
+      <div><h3>Three pack sizes</h3><p>250g, 500g and 1kg, priced clearly before you add to cart.</p></div>
+      <div><h3>Gift-ready boxes</h3><p>Curated boxes for Eid, weddings and corporate gifting.</p></div>
+    </div>
+  </section>
+
+  <section id="story" class="sec story">
+    <img src="assets/images/deglet-noor.jpg" alt="A stem of Deglet Noor dates" loading="lazy" width="500" height="500">
+    <div>
+      <h2>Our quality &amp; sourcing story</h2>
+      <p>Write your own story here: where your dates come from, how you check each batch, and how they are packed. Replace this placeholder with verified details about your suppliers and any certifications you hold.</p>
+      <a class="btn gold" href="#shop">Taste the range</a>
+    </div>
+  </section>
+
+  <section id="gifts" class="sec cream">
+    <h2>Featured gift boxes <small>placeholder prices</small></h2>
+    <div class="grid" id="giftGrid"></div>
+  </section>
+
+  <section class="sec">
+    <h2>What customers say <small>demo reviews</small></h2>
+    <div class="trio quotes">
+      <blockquote>“Beautifully packed and easy to order.”<cite>Demo customer, Dhaka</cite></blockquote>
+      <blockquote>“The gift box made a lovely Eid present.”<cite>Demo customer, Chattogram</cite></blockquote>
+      <blockquote>“Clear sizes and prices. Simple checkout.”<cite>Demo customer, London</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="sec dark news">
+    <h2>Get offers and new arrivals</h2>
+    <form id="newsForm" novalidate>
+      <label class="sr" for="email">Email address</label>
+      <input id="email" type="email" placeholder="you@example.com" required aria-describedby="newsMsg">
+      <button class="btn gold" type="submit">Subscribe</button>
+      <p id="newsMsg" role="status"></p>
+    </form>
+  </section>
+
+  <section class="sec">
+    <h2>On Instagram <small>demo gallery</small></h2>
+    <div class="insta">
+      <img src="assets/images/medjool.jpg" alt="Medjool dates" loading="lazy" width="200" height="200"><img src="assets/images/hero.jpg" alt="Bowl of dates" loading="lazy" width="200" height="200"><img src="assets/images/khalas.jpg" alt="Khalas dates" loading="lazy" width="200" height="200"><img src="assets/images/ajwa.jpg" alt="Ajwa dates" loading="lazy" width="200" height="200"><img src="assets/images/safawi.jpg" alt="Safawi dates" loading="lazy" width="200" height="200"><img src="assets/images/mabroom.jpg" alt="Mabroom dates" loading="lazy" width="200" height="200">
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div><strong>Royal Dates</strong><p>Premium dates for Bangladesh and the world.</p></div>
+  <div><h3>Shop</h3><a href="#shop">Collection</a><a href="#gifts">Gift boxes</a><a href="#best">Best sellers</a></div>
+  <div><h3>Help</h3><a href="#">Delivery</a><a href="#">Returns</a><a href="#">Contact</a></div>
+  <p class="copy">© 2026 Royal Dates. Prices, ratings and reviews on this page are demo data.</p>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="dh"><h2>Your cart</h2><button class="icon" id="closeCart" aria-label="Close cart">✕</button></div>
+  <div id="cartItems"></div>
+  <div class="df"><div class="tot"><span>Subtotal</span><strong id="subtotal">৳0</strong></div><button class="btn gold" id="checkout">Checkout</button></div>
+</aside>
+<dialog id="qv" aria-label="Quick view"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
